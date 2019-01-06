@@ -62,7 +62,6 @@ class Calculator extends Component {
 
     keydownHandler(event){
         if (this.isInputCodeNumeric(event.code)) {
-            console.log('IS DIGIT!');
             const inputStr = event.key;
             const inputStackVal = +(this.state.inputStack.join('') + inputStr);
             const operator = this.state.operator;
